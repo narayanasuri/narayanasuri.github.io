@@ -3,19 +3,20 @@
  * Copyright 2013-2017 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-freelancer/blob/master/LICENSE)
  */
+
  #mainNav{font-family: "Open Sans", sans-serif;font-weight:700;border:none;background:#223E4A}
  #mainNav a:focus{outline:0}
  #mainNav .navbar-brand{font-size:1.1rem;color:#fff}
  #mainNav .navbar-brand.active,#mainNav .navbar-brand:active,#mainNav .navbar-brand:focus,#mainNav .navbar-brand:hover{color:#fff}
  #mainNav .navbar-nav{letter-spacing:1px}
  #mainNav .navbar-nav li.nav-item a.nav-link{color:#fff}
- #mainNav .navbar-nav li.nav-item a.nav-link:hover{color:#18bc9c;outline:0}
+ #mainNav .navbar-nav li.nav-item a.nav-link:hover{color:#1ABC9C;outline:0}
  #mainNav .navbar-nav li.nav-item a.nav-link:active,#mainNav .navbar-nav li.nav-item a.nav-link:focus{color:#fff}
  #mainNav .navbar-toggler{font-size:14px;padding:11px;text-transform:uppercase;color:#fff;border-color:#fff}
  #mainNav .navbar-toggler:focus,#mainNav .navbar-toggler:hover{color:#fff;border-color:#18bc9c;background-color:#18bc9c}
  @media (min-width:992px){#mainNav{padding-top:25px;padding-bottom:25px;-webkit-transition:padding-top .3s,padding-bottom .3s;-moz-transition:padding-top .3s,padding-bottom .3s;transition:padding-top .3s,padding-bottom .3s}
  #mainNav .navbar-brand{font-size:2em;-webkit-transition:all .3s;-moz-transition:all .3s;transition:all .3s}
- #mainNav .navbar-nav>li.nav-item>a.nav-link.active{color:#fff;border-radius:3px;background:#18bc9c}
+ #mainNav .navbar-nav>li.nav-item>a.nav-link.active{color:#fff;bo	rder-radius:3px;background:#18bc9c}
  #mainNav .navbar-nav>li.nav-item>a.nav-link.active:active,#mainNav .navbar-nav>li.nav-item>a.nav-link.active:focus,#mainNav .navbar-nav>li.nav-item>a.nav-link.active:hover{color:#fff;background:#18bc9c}
  #mainNav.navbar-shrink{padding-top:10px;padding-bottom:10px}
  #mainNav.navbar-shrink .navbar-brand{font-size:1.5em}}
@@ -65,24 +66,6 @@
  .vertical-desc {display: inline-block}
  .vertical-desc img{float: left; padding: 0 20px 20px 0;}
  .store-body{padding-top:150px;text-align:center;background:#158599}
-
-
-
-
-
-
-
-
-
-.navbar-nav {
-    flex-direction: row;
-}
-    
-.nav-link {
-    padding-right: .5rem !important;
-    padding-left: .5rem !important;
-    font-family: "Open Sans", sans-serif;
-}
 
 .bg-nav {
     background-color: #223E4A;
@@ -233,4 +216,236 @@
 }
 .skillbars-div {
     padding: 20px;
+}
+
+
+
+
+
+
+
+/*------------------------------
+	NAVBAR
+------------------------------*/
+
+.navbar-default {
+	margin:0;
+	background-color:#2C3E50;
+	border:none;
+	border-radius:0;
+	height:78px;
+	padding-top:3px;
+	border-bottom:8px solid rgba(0,0,0,0.1);
+	display:none;
+}
+
+.navbar-default .navbar-brand {
+	font-family:'Montserrat';
+	padding:23px 0 0 25px;
+	color:#16A085;
+	font-size:24px;
+	transition-duration:0.7s;
+}
+
+.navbar-logo {
+	padding:7px 0 0 0;
+	width:50px;
+}
+
+.navbar-default .navbar-brand:hover {
+	color:#FFFFFF;
+}
+
+.navbar-default .navbar-nav > li > a {
+	color:#FFFFFF;
+	font-family:'Alegreya Sans SC';
+	margin-top:6px;
+	font-size:18px;
+	border-left:4px solid transparent;
+	transition-duration:0.7s;
+}
+
+.navbar-default .navbar-nav > li > a.blog_menu_link{
+	color:#ED5A64;
+}
+
+.navbar-default .navbar-nav > li > a.blog_menu_link:hover{
+	color:#ED5A64;
+	border-left:4px solid #ED5A64;
+}
+
+.navbar-default .navbar-nav > li > a:hover {
+	color:#16A085;
+	border-left:4px solid #16A085;
+}
+
+.navbar-collapse {
+	margin:0;
+	background-color:#2C3E50;
+	border:none;
+	border-radius:0;
+	padding-top:3px;
+	overflow:hidden;
+}
+
+.navbar-collapse.in {
+    overflow-y: hidden;
+}
+
+.container-fluid {
+      padding-top: 70px;
+      padding-bottom: 70px;
+  }
+
+.bg-2 { 
+    background-color: #474e5d; /* Dark Blue */
+	color: #ffffff;
+}
+.about-content-margin {
+	padding: 20px;
+}
+.about-content-p {
+    line-height: 1.8;
+}
+.bg-3 {
+    background-color: #1ABC9C; /* Dark Blue */
+	color: #223E4A;
+}
+
+ .bold-text {
+    font-weight: bold;
+ }
+ .quote-p {
+	 font-size: 35px;
+ }
+
+
+
+
+
+
+
+ #myFooter {
+	background-color: #373a48;
+	color:white;
+}
+
+#myFooter .footer-copyright{
+	background-color: #383737;
+	padding-top:3px;
+	padding-bottom:3px;
+	text-align: center;
+}
+
+#myFooter .footer-copyright p{
+	margin:10px;
+	color: #ccc;
+}
+
+#myFooter ul{
+	list-style-type: none;
+    padding-left: 0;
+    line-height: 1.7;
+
+}
+
+#myFooter h5{
+	font-size: 18px;
+    color: white;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+#myFooter a{
+	color:#d2d1d1;
+	text-decoration: none;
+}
+
+#myFooter a:hover, #myFooter a:focus{
+	text-decoration: none;
+	color:white;
+}
+
+#myFooter .myCols{
+	text-align: center;
+}
+
+#myFooter .social-networks{
+	text-align: center;
+	padding-top: 30px;
+	padding-bottom: 38px;
+}
+
+#myFooter .social-networks a{
+    font-size: 32px;
+    margin-right: 5px;
+    margin-left: 5px;
+    color: #f9f9f9;
+    padding: 10px;
+    transition: 0.2s;
+}
+
+#myFooter .social-networks a:hover{
+	text-decoration: none;
+
+}
+
+#myFooter .facebook:hover{
+	color:#0077e2;
+}
+
+#myFooter .google:hover{
+	color:#ef1a1a;
+}
+
+#myFooter .twitter:hover{
+	color: #00aced;
+}
+
+#myFooter .github:hover{
+	color: #3F4448;
+}
+
+#myFooter .linkedin:hover{
+	color: #0077B5;
+}
+
+@media screen and (max-width: 767px){
+	#myFooter {
+		text-align: center;
+	}
+}
+
+#map-container {
+    height: 240px;
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+/* CSS used for positioning the footers at the bottom of the page. */
+/* You can remove this. */
+
+
+html{
+	height: 100% !important;
+}
+
+body{
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: column;
+    -webkit-flex-direction: column;
+    height: 100%;
+}
+
+.content{
+	flex: 1 0 auto;
+	-webkit-flex: 1 0 auto;
+	min-height: 200px;
+}
+
+#myFooter{
+	flex: 0 0 auto;
+    -webkit-flex: 0 0 auto;
 }

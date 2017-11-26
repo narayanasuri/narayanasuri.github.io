@@ -1,7 +1,5 @@
 /* -------------------------------- 
-
 Primary style
-
 -------------------------------- */
 html * {
   -webkit-font-smoothing: antialiased;
@@ -18,7 +16,7 @@ body {
   font-size: 100%;
   font-family: "Open Sans", serif;
   color: #000;
-  background-color: #CFD8DC;
+  background-color: #1ABC9C;
 }
 
 a {
@@ -33,9 +31,7 @@ h1, h2 {
 }
 
 /* -------------------------------- 
-
 Modules - reusable parts of our design
-
 -------------------------------- */
 .cd-container {
   /* this class is used to give a max-width to the element it is applied to, and center it horizontally when it reaches that max-width */
@@ -51,9 +47,7 @@ Modules - reusable parts of our design
 }
 
 /* -------------------------------- 
-
 Main components 
-
 -------------------------------- */
 header {
   height: 200px;
