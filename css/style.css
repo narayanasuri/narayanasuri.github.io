@@ -235,6 +235,7 @@ header h1 {
   position: relative;
   margin-left: 60px;
   background: white;
+  color: black;
   border-radius: 0.25em;
   padding: 1em;
   box-shadow: 0 3px 0 #d7e4ed;
@@ -318,6 +319,7 @@ header h1 {
     width: 100%;
     left: 122%;
     top: 6px;
+    color: white;
     font-size: 16px;
     font-size: 1rem;
   }
@@ -338,6 +340,7 @@ header h1 {
     left: auto;
     right: 122%;
     text-align: right;
+    color: white;
   }
   .cssanimations .cd-timeline-content.is-hidden {
     visibility: hidden;

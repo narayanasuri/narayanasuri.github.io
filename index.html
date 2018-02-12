@@ -44,7 +44,7 @@
 			<div class="collapse navbar-collapse" id="navbarResponsive">
 				<ul class="navbar-nav ml-auto navbar-right">
 					<li class="nav-item">
-						<a class="nav-link js-scroll-trigger" href="#home">Home</a>
+						<a class="nav-link js-scroll-trigger active" href="#home">Home</a>
 					</li>
 					<li class="nav-item">
 						<a class="nav-link js-scroll-trigger" href="#about">About</a>
@@ -66,58 +66,33 @@
 		</div>
 	</nav>
 
-	<section class="home-section" id="home">
-		<div class="center-content">
-			<div class="container">
-				<img class="circle-avatar img-fluid" src="img/profile_pic.jpg">
-				<h1 class="head-text">
-					<p class="typewrite about_me_h1" data-period="100" data-type='[ "I&#39m Narayana Suri", "Software Developer", "From Chennai!" ]'
-					/>
-					<span class="wrap"></span>
-				</h1>
-			</div>
+	<div id="particles-js"></div>
+
+	<div id="home" class="center-content">
+		<div class="container">
+			<img class="circle-avatar img-fluid" src="img/profile_pic.jpg">
+			<h1 class="head-text">
+				<p class="typewrite about_me_h1" data-period="100" data-type='[ "I&#39m Narayana Suri", "Software Developer", "From Chennai!" ]'
+				/>
+				<span class="wrap"></span>
+			</h1>
 		</div>
-	</section>
+	</div>
 
 	<section id="about" class="content-first">
 		<div class="bg-2">
 			<div class="container about-content-margin">
 				<h3 class="display-4">About Me</h3>
 				<br />
-				<p class="about-content-p">I&#39m an Android developer and Front-End developer with 3 years of part time experience. I love developing things with
-					the latest technology. I spend countless hours learning cool stuff. I've got a passion for any kind of programming in
-					general. A few of my other favorite things in life include football, Pink Floyd, cats and gaming!</p>
+				<p class="about-content-p">I&#39m a Software Engineering under-graduate who is a sucker for technology. Some of the things I do are develop Android
+					applications, build good responsive user interfaces in the web and code solutions to problems. I love developing things
+					with the latest technology. I spend countless hours learning cool stuff and help make ideas come to life. A few of my
+					other favorite things on planet Earth include football, movies, Pink Floyd, cats and gaming!</p>
 				<br />
-				<div class="card bg-3">
-					<div class="card-header">
-						<h2>Hit me up!</h2>
-					</div>
-					<div class="card-body" style="margin:auto; text-align:center;">
-						<p class="card-text">
-							<span class="bold-text">
-								<i class="fa fa-birthday-cake" aria-hidden="true"></i> Birthday : </span> 04-12-1996</p>
-						<br />
-						<p class="card-text">
-							<span class="bold-text">
-								<i class="fa fa-mobile" aria-hidden="true"></i> Phone : </span> +91-8056028752</p>
-						<br />
-						<p class="card-text">
-							<span class="bold-text">
-								<i class="fa fa-at" aria-hidden="true"></i> Email : </span> narayanasuri08@gmail.com</p>
-						<br />
-						<p class="card-text">
-							<span class="bold-text">
-								<i class="fa fa-level-up" aria-hidden="true"></i> Experience : </span> 3 years</p>
-						<br />
-						<span style="margin:auto;">
-							<a href="./resume/resume_narayanasuri.pdf" download class="btn btn-primary">
-								<i class="fa fa-download" aria-hidden="true"></i> Donwload Resume</a>
-						</span>
-					</div>
-				</div>
-				<br />
-
+				<a href="./resume/resume_narayanasuri.pdf" download="" class="btn btn-danger">
+					<i class="fa fa-download" aria-hidden="true"></i> Download Resume</a>
 			</div>
+			<br />
 		</div>
 		<!-- Container end-->
 	</section>
@@ -138,7 +113,7 @@
 							<div class="cd-timeline-content">
 								<h2>Mekanism Electronics Pvt. Ltd.</h2>
 								<p class="job-profile-p">Intern - Junior Android Developer</p>
-								<p>Interned at ‘Mechanism’, an IOT based startup in Bangalore where my job was to work on Android projects involving
+								<p>Interned at ‘Mekanism’, an IOT based startup in Bangalore where my job was to work on Android projects involving
 									sending and receiving data to and from an Arduino device using Google’s Bluetooth API.</p>
 								<p></p>
 								<span class="cd-date">May 2017</span>
@@ -210,102 +185,63 @@
 			<div class="container about-content-margin">
 				<h3 class="display-4">Skills</h3>
 				<br />
-
-				<div class="container skillbars-div">
-
-					<div class="skillbar clearfix " data-percent="80%">
-						<div class="skillbar-title" style="background: #d35400;">
-							<span>Android</span>
-						</div>
-						<div class="skillbar-bar" style="background: #e67e22;"></div>
-						<div class="skill-bar-percent">80%</div>
+				<br />
+				<div class="row">
+					<div class="col-md-2 col-4 text-center">
+						<span data-tooltip="Java">
+							<img id="java-tech" class="tech-img" src="./img/java.png" alt="Java">
+						</span>
 					</div>
-					<!-- End Skill Bar -->
-
-					<div class="skillbar clearfix " data-percent="70%">
-						<div class="skillbar-title" style="background: #46465e;">
-							<span>Java</span>
-						</div>
-						<div class="skillbar-bar" style="background: #5a68a5;"></div>
-						<div class="skill-bar-percent">70%</div>
+					<div class="col-md-2 col-4 text-center">
+						<span data-tooltip="Android Development">
+							<img id="android-tech" class="tech-img" src="./img/android-icon.png" alt="Lights">
+						</span>
 					</div>
-					<!-- End Skill Bar -->
-
-					<div class="skillbar clearfix " data-percent="60%">
-						<div class="skillbar-title" style="background: #2c3e50;">
-							<span>Web</span>
-						</div>
-						<div class="skillbar-bar" style="background: #2c3e50;"></div>
-						<div class="skill-bar-percent">60%</div>
+					<div class="col-md-2 col-4 text-center">
+						<span data-tooltip="HTML">
+							<img id="html-tech" class="tech-img" src="./img/html-icon.png" alt="Lights">
+						</span>
 					</div>
-					<!-- End Skill Bar -->
-
-					<div class="skillbar clearfix " data-percent="60%">
-						<div class="skillbar-title" style="background: #124e8c;">
-							<span>UI/UX</span>
-						</div>
-						<div class="skillbar-bar" style="background: #4288d0;"></div>
-						<div class="skill-bar-percent">60%</div>
+					<div class="col-md-2 col-4 text-center">
+						<span data-tooltip="CSS">
+							<img id="css-tech" class="tech-img" src="./img/css-icon.png" alt="Lights">
+						</span>
 					</div>
-					<!-- End Skill Bar -->
-
-					<div class="skillbar clearfix " data-percent="40%">
-						<div class="skillbar-title" style="background: #27ae60;">
-							<span>React</span>
-						</div>
-						<div class="skillbar-bar" style="background: #2ecc71;"></div>
-						<div class="skill-bar-percent">40%</div>
+					<div class="col-md-2 col-4 text-center">
+						<span data-tooltip="JavaScript">
+							<img id="js-tech" class="tech-img" src="./img/js-icon.jpg" alt="Lights">
+						</span>
 					</div>
-					<!-- End Skill Bar -->
-
-					<div class="skillbar clearfix " data-percent="70%">
-						<div class="skillbar-title" style="background: #F44336;">
-							<span>Git</span>
-						</div>
-						<div class="skillbar-bar" style="background: #F44336;"></div>
-						<div class="skill-bar-percent">70%</div>
+					<div class="col-md-2 col-4 text-center">
+						<span data-tooltip="jQuery">
+							<img id="jquery-tech" class="tech-img" src="./img/jquery-icon.png" alt="Lights">
+						</span>
 					</div>
-					<!-- End Skill Bar -->
-
-					<div class="skillbar clearfix " data-percent="80%">
-						<div class="skillbar-title" style="background: #CDDC39;">
-							<span>Communication</span>
-						</div>
-						<div class="skillbar-bar" style="background: #CDDC39;"></div>
-						<div class="skill-bar-percent">80%</div>
-					</div>
-					<!-- End Skill Bar -->
-
 				</div>
-
-			</div>
-
-		</div>
-
-	</section>
-
-	<section id="quote" class="content-first">
-		<div class="bg-2">
-			<div class="container about-content-margin">
-				<div class="card bg-3">
-					<div class="card-header">
-						<blockquote class="blockquote">
-							<p class="quote-p">
-								<i class="fa fa-quote-left" aria-hidden="true">
-								</i>
-								All you touch and all you see, is all your life will ever be
-								<i class="fa fa-quote-right" aria-hidden="true"></i>
-							</p>
-						</blockquote>
+				<br />
+				<div class="row">
+					<div class="col-md-2 col-4 text-center">
+						<span data-tooltip="Bootstrap">
+							<img id="bootstrap-tech" class="tech-img" src="./img/bootstrap.svg" alt="Lights">
+						</span>
 					</div>
-					<div class="card-body" style="margin-left: 70%;">
-						<p class="lead"> - Pink Floyd</p>
+					<div class="col-md-2 col-4 text-center">
+						<span data-tooltip="Git">
+							<img id="git-tech" class="tech-img" src="./img/git-icon.png" alt="Lights">
+						</span>
+					</div>
+					<div class="col-md-2 col-4 text-center">
+						<span data-tooltip="NPM">
+							<img id="npm-tech" class="tech-img" src="./img/npm.png" alt="Lights">
+						</span>
 					</div>
 				</div>
 				<br />
 
 			</div>
+
 		</div>
+
 	</section>
 
 	<section id="education">
@@ -359,12 +295,22 @@
 			<div class="container about-content-margin">
 				<h3 class="display-4">Contact Me</h3>
 				<br />
-				<div id="" class="container">
-<!-- 
-					<iframe id="map-container" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJOwg_06VPwokRYv534QaPC8g&key=AIzaSyAO3MKSOzJTh0IN24owrTQjjbfk7lwIyDI">
-					</iframe> -->
+				<span>
+					<p>Email : narayanasuri08@gmail.com</p>
+				</span>
+				<br />
+				<span>
+					<p>Phone : +91-8056028752</p>
+				</span>
+				<br />
 
-				</div>
+				<div id="map"></div>
+				<br />
+
+				<span>
+					<p class="text-center">or get in touch with me on</p>
+				</span>
+				<br />
 
 				<div class="social-networks">
 					<a href="https://twitter.com/n_suri96" target="_blank" class="twitter">
@@ -384,7 +330,7 @@
 					</a>
 				</div>
 				<div class="footer-copyright">
-					<p>© 2017</p>
+					<p>© 2018</p>
 				</div>
 			</div>
 		</footer>
@@ -397,16 +343,22 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
 	 crossorigin="anonymous"></script>
 
-	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAO3MKSOzJTh0IN24owrTQjjbfk7lwIyDI&callback=myMap"></script>
+	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBfX_cbFXnOPbVEHlJbGUV_OUAwFIeQaPQ&callback=initMap">
+	</script>
 
 	<!-- Plugin JavaScript -->
 	<script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
-	<!-- Contact Form JavaScript -->
+	<!-- scripts -->
+	<script src="vendor/particles.js"></script>
+	<script src="js/index.js"></script>
+
+	<!-- stats.js -->
+	<script src="js/lib/stats.js"></script>
 
 	<!-- Custom scripts for this template -->
 	<script src="js/freelancer.min.js"></script>
-	<script src="js/main.js"></script>
+	<script src="./js/main.js"></script>
 
 </body>
 

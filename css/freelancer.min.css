@@ -4,22 +4,23 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-freelancer/blob/master/LICENSE)
  */
 
- #mainNav{font-family: "Open Sans", sans-serif;font-weight:700;border:none;background:#223E4A}
+ #mainNav{font-family: "Open Sans", sans-serif;font-weight:700;border:none;background:#DC3545}
  #mainNav a:focus{outline:0}
  #mainNav .navbar-brand{font-size:1.1rem;color:#fff}
  #mainNav .navbar-brand.active,#mainNav .navbar-brand:active,#mainNav .navbar-brand:focus,#mainNav .navbar-brand:hover{color:#fff}
  #mainNav .navbar-nav{letter-spacing:1px}
  #mainNav .navbar-nav li.nav-item a.nav-link{color:#fff}
- #mainNav .navbar-nav li.nav-item a.nav-link:hover{color:#1ABC9C;outline:0}
+ #mainNav .navbar-nav li.nav-item a.nav-link:hover{color:#222222;outline:0}
  #mainNav .navbar-nav li.nav-item a.nav-link:active,#mainNav .navbar-nav li.nav-item a.nav-link:focus{color:#fff}
- #mainNav .navbar-toggler{font-size:14px;padding:11px;text-transform:uppercase;color:#fff;border-color:#fff}
- #mainNav .navbar-toggler:focus,#mainNav .navbar-toggler:hover{color:#fff;border-color:#18bc9c;background-color:#18bc9c}
+ #mainNav .navbar-toggler{font-size:14px;padding:11px;text-transform:uppercase;color:#222222;border-color:#222222}
+ #mainNav .navbar-toggler:foc s,#mainNav .navbar-toggler:hover{color:#222222;border-color:#222222;background-color:#222222}
  @media (min-width:992px){#mainNav{padding-top:25px;padding-bottom:25px;-webkit-transition:padding-top .3s,padding-bottom .3s;-moz-transition:padding-top .3s,padding-bottom .3s;transition:padding-top .3s,padding-bottom .3s}
  #mainNav .navbar-brand{font-size:2em;-webkit-transition:all .3s;-moz-transition:all .3s;transition:all .3s}
- #mainNav .navbar-nav>li.nav-item>a.nav-link.active{color:#fff;bo	rder-radius:3px;background:#18bc9c}
- #mainNav .navbar-nav>li.nav-item>a.nav-link.active:active,#mainNav .navbar-nav>li.nav-item>a.nav-link.active:focus,#mainNav .navbar-nav>li.nav-item>a.nav-link.active:hover{color:#fff;background:#18bc9c}
+ #mainNav .navbar-nav>li.nav-item>a.nav-link.active{color:#fff;border-radius:3px;background:#222222}
+ #mainNav .navbar-nav>li.nav-item>a.nav-link.active:active,#mainNav .navbar-nav>li.nav-item>a.nav-link.active:focus,#mainNav .navbar-nav>li.nav-item>a.nav-link.active:hover{color:#fff;background:#222222}
  #mainNav.navbar-shrink{padding-top:10px;padding-bottom:10px}
  #mainNav.navbar-shrink .navbar-brand{font-size:1.5em}}
+ #mainNav .navbar-toggler-icon { color: #D3D3D3 }
  header.masthead{padding-top:100px;padding-bottom:50px;text-align:center;color:#fff;background:#158599}
  header.masthead img{display:block;margin:0 auto 20px}
  header.masthead .intro-text .name{font-family: "Open Sans", serif;font-size:2em;font-weight:700;display:block;text-transform:uppercase}
@@ -68,10 +69,10 @@
  .store-body{padding-top:150px;text-align:center;background:#158599}
 
 .bg-nav {
-    background-color: #223E4A;
+    background-color: #DC3545;
 }
 .home-section {
-    background: #223E4A;
+    background: #DC3545;
     height:100vh;
     width: 100%;
     -webkit-background-size: cover;
@@ -93,21 +94,27 @@
 .circle-avatar{
     display:block;
     margin:auto;
-    width: 30%;
+    width: 40%;
+    min-width: 40%;
     height: auto;
     border-radius:50%;
-}
-.about_me_h1 {
-    color:#fff; 
-    text-decoration: none;
-    font-size: 30px;
-    font-family: "Open Sans", sans-serif;
 }
 .center-content {
     height:100vh;
     display:flex;
     align-items:center;
     justify-content:center;
+	position: absolute;
+	width: 100%;
+	top: 50%;
+	right: 50%;
+	transform: translate(50%,-50%);
+}
+.about_me_h1 {
+    color:#fff; 
+    text-decoration: none;
+    font-size: 30px;
+    font-family: "Open Sans", sans-serif;
 }
 .center-text {
     margin: auto;
@@ -134,95 +141,12 @@
     padding: 20px;
 }
 .section-header-div {
-    background: #37474F;
+    background: #595970;
 }
 .skills-bg {
     padding-top: 50px;
     padding-bottom: 50px;
 }
-
-.skillbar {
-	position:relative;
-	display:block;
-	margin-bottom:15px;
-	width:100%;
-	background:#eee;
-	height:35px;
-	border-radius:3px;
-	-moz-border-radius:3px;
-	-webkit-border-radius:3px;
-	-webkit-transition:0.4s linear;
-	-moz-transition:0.4s linear;
-	-ms-transition:0.4s linear;
-	-o-transition:0.4s linear;
-	transition:0.4s linear;
-	-webkit-transition-property:width, background-color;
-	-moz-transition-property:width, background-color;
-	-ms-transition-property:width, background-color;
-	-o-transition-property:width, background-color;
-	transition-property:width, background-color;
-}
-
-.skillbar-title {
-	position:absolute;
-	top:0;
-	left:0;
-    width:110px;
-	font-weight:bold;
-	font-size:13px;
-	color:#ffffff;
-	background:#6adcfa;
-	-webkit-border-top-left-radius:3px;
-	-webkit-border-bottom-left-radius:4px;
-	-moz-border-radius-topleft:3px;
-	-moz-border-radius-bottomleft:3px;
-	border-top-left-radius:3px;
-    border-bottom-left-radius:3px;
-    font-family: "Open Sans", sans-serif;
-}
-
-.skillbar-title span {
-	display:block;
-	background:rgba(0, 0, 0, 0.1);
-	padding:0 20px;
-	height:35px;
-	line-height:35px;
-	-webkit-border-top-left-radius:3px;
-	-webkit-border-bottom-left-radius:3px;
-	-moz-border-radius-topleft:3px;
-	-moz-border-radius-bottomleft:3px;
-	border-top-left-radius:3px;
-	border-bottom-left-radius:3px;
-}
-
-.skillbar-bar {
-	height:35px;
-	width:0px;
-	background:#6adcfa;
-	border-radius:3px;
-	-moz-border-radius:3px;
-	-webkit-border-radius:3px;
-}
-
-.skill-bar-percent {
-	position:absolute;
-	right:10px;
-	top:0;
-	font-size:11px;
-	height:35px;
-	line-height:35px;
-	color:#ffffff;
-	color:rgba(0, 0, 0, 0.4);
-}
-.skillbars-div {
-    padding: 20px;
-}
-
-
-
-
-
-
 
 /*------------------------------
 	NAVBAR
@@ -230,7 +154,7 @@
 
 .navbar-default {
 	margin:0;
-	background-color:#2C3E50;
+	background-color:#DC3545;
 	border:none;
 	border-radius:0;
 	height:78px;
@@ -242,7 +166,7 @@
 .navbar-default .navbar-brand {
 	font-family: "Open Sans", serif;
 	padding:23px 0 0 25px;
-	color:#16A085;
+	color:#DC3545;
 	font-size:24px;
 	transition-duration:0.7s;
 }
@@ -276,12 +200,12 @@
 
 .navbar-default .navbar-nav > li > a:hover {
 	color:#16A085;
-	border-left:4px solid #16A085;
+	border-left:4px solid #222222;
 }
 
 .navbar-collapse {
 	margin:0;
-	background-color:#2C3E50;
+	background-color:#DC3545;
 	border:none;
 	border-radius:0;
 	padding-top:3px;
@@ -295,10 +219,9 @@
 .container-fluid {
       padding-top: 70px;
       padding-bottom: 70px;
-  }
-
-.bg-2 { 
-    background-color: #474e5d; /* Dark Blue */
+}
+.bg-2 {
+    background-color: #2E283A;
 	color: #ffffff;
 }
 .about-content-margin {
@@ -307,11 +230,10 @@
 .about-content-p {
     line-height: 1.8;
 }
-.bg-3 {
-    background-color: #1ABC9C; /* Dark Blue */
-	color: #223E4A;
+.bg-3 { 
+    background-color: #222222;
+	color: #ffffff;
 }
-
  .bold-text {
     font-weight: bold;
  }
@@ -319,14 +241,8 @@
 	 font-size: 35px;
  }
 
-
-
-
-
-
-
  #myFooter {
-	background-color: #373a48;
+	background-color: #2E283A;
 	color:white;
 }
 
@@ -346,7 +262,6 @@
 	list-style-type: none;
     padding-left: 0;
     line-height: 1.7;
-
 }
 
 #myFooter h5{
@@ -389,48 +304,37 @@
 	text-decoration: none;
 
 }
-
 #myFooter .facebook:hover{
 	color:#0077e2;
 }
-
 #myFooter .google:hover{
 	color:#ef1a1a;
 }
-
 #myFooter .twitter:hover{
 	color: #00aced;
 }
-
 #myFooter .github:hover{
 	color: #3F4448;
 }
-
 #myFooter .linkedin:hover{
 	color: #0077B5;
 }
-
 @media screen and (max-width: 767px){
 	#myFooter {
 		text-align: center;
 	}
 }
-
-#map-container {
-    height: 240px;
-    width: 100%;
-    margin-top: 30px;
-    margin-bottom: 10px;
-}
-
+#map {
+   width: 100%;
+   height: 400px;
+   background-color: grey;
+ }
 /* CSS used for positioning the footers at the bottom of the page. */
 /* You can remove this. */
-
 
 html{
 	height: 100% !important;
 }
-
 body{
     display: flex;
     display: -webkit-flex;
@@ -438,14 +342,94 @@ body{
     -webkit-flex-direction: column;
     height: 100%;
 }
-
 .content{
 	flex: 1 0 auto;
 	-webkit-flex: 1 0 auto;
 	min-height: 200px;
 }
-
 #myFooter{
 	flex: 0 0 auto;
     -webkit-flex: 0 0 auto;
+}
+#particles-js{
+  background: #1D1826;
+    height:100vh;
+    width: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    position: relative;
+}
+.tech-img {
+	height: 128px;
+	width: 128px;
+	padding: 10px;
+}
+
+/**
+ * Tooltip Styles
+ */
+
+/* Add this attribute to the element that needs a tooltip */
+[data-tooltip] {
+  position: relative;
+  z-index: 2;
+  cursor: pointer;
+}
+
+/* Hide the tooltip content by default */
+[data-tooltip]:before,
+[data-tooltip]:after {
+  visibility: hidden;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* Position tooltip above the element */
+[data-tooltip]:before {
+  position: absolute;
+  bottom: 150%;
+  left: 50%;
+  margin-bottom: 5px;
+  margin-left: -80px;
+  padding: 7px;
+  width: 160px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  background-color: #000;
+  background-color: hsla(0, 0%, 20%, 0.9);
+  color: #fff;
+  content: attr(data-tooltip);
+  text-align: center;
+  font-size: 14px;
+  line-height: 1.2;
+}
+
+/* Triangle hack to make tooltip look like a speech bubble */
+[data-tooltip]:after {
+  position: absolute;
+  bottom: 150%;
+  left: 50%;
+  margin-left: -5px;
+  width: 0;
+  border-top: 5px solid #000;
+  border-top: 5px solid hsla(0, 0%, 20%, 0.9);
+  border-right: 5px solid transparent;
+  border-left: 5px solid transparent;
+  content: " ";
+  font-size: 0;
+  line-height: 0;
+}
+
+/* Show tooltip content on hover */
+[data-tooltip]:hover:before,
+[data-tooltip]:hover:after {
+  visibility: visible;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=100);
+  opacity: 1;
 }
