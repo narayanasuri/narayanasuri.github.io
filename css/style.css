@@ -144,6 +144,31 @@ header h1 {
   margin-left: -12px;
   margin-top: -12px;
 }
+.cd-timeline-img.cd-ey {
+  background: #fff;
+}
+.cd-timeline-img.cd-mekanism {
+  background: #666666;
+}
+.cd-timeline-img.cd-mekanism img {
+  display: block;
+  width: 40px;
+  height: 20px;
+  position: relative;
+  left: 50%;
+  top: 50%;
+  margin-left: -20px;
+  margin-top: -12px;
+}
+.cd-timeline-img.cd-srm {
+  background: #fff;
+}
+.cd-timeline-img.cd-cp {
+  background: #222222;
+}
+.cd-timeline-img.cd-mathsya {
+  background: #fff;
+}
 .cd-timeline-img.cd-picture {
   background: #75ce66;
 }
