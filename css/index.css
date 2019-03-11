@@ -1,0 +1,145 @@
+.landing-image {
+    background: 
+    linear-gradient(
+          rgba(0, 0, 0, 0.7), 
+          rgba(0, 0, 0, 0.7)
+    ),
+    url('../assets/background.jpg') !important;
+    height:100vh;
+    width: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    position: relative;
+}
+
+header-div {
+    width: 100%;
+    background-color: #354052;
+}
+
+#propic {
+    object-fit: cover;
+    width: 80%;
+}
+
+.header-element {
+    padding: 2em;
+}
+
+.header-p {
+    font-size: 16px;
+}
+
+.experience-div {
+    padding: 2em;
+    background-color: #F5F9FC;
+}
+
+.custom-grid-container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+#propicdiv {
+    grid-column: span 4;
+}
+
+#prodescdiv {
+    grid-column: span 8;
+    color: white;
+}
+
+.exp-card {
+    padding: 10px;
+    grid-column: span 3;
+}
+
+.skills-div {
+    padding: 2em;
+    background-color: #F5F9FC;
+}
+
+.chip {
+    display: inline-block;
+    padding: 0 25px;
+    height: 40px;
+    font-size: 13px;
+    border-radius: 25px;
+    line-height: 40px;
+    background-color: #f1f1f1;
+}
+  
+.chip img {
+    float: left;
+    margin: 0 10px 0 -25px;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+}
+
+@media screen and (max-width: 768px) {
+    #propicdiv {
+        grid-column: span 6;
+    }
+    #prodescdiv {
+        grid-column: span 6;
+        color: white;
+        text-align: center;
+    }
+    .exp-card {
+        padding: 10px;
+        grid-column: span 6;
+        margin-left: 20px;
+    }
+    .exp-card-list {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #propicdiv {
+        grid-column: span 12;
+    }
+    #prodescdiv {
+        grid-column: span 12;
+        color: white;
+        text-align: center;
+    }
+    .exp-card {
+        padding: 10px;
+        margin-left: 20px;
+        grid-column: span 12;
+    }
+    .exp-card-list {
+        text-align: center;
+    }
+}
+
+.social-networks a {
+    color: white;
+    font-size: 20px;
+    margin: 10px;
+}
+
+#facebook-icon:hover{
+	color:#3b5998;
+}
+#googleplus-icon:hover{
+	color:#ef1a1a;
+}
+#twitter-icon:hover{
+	color: #00aced;
+}
+#github-icon:hover{
+	color: #3F4448;
+}
+#linkedin-icon:hover{
+	color: #0077B5;
+}
+
+.footer-div {
+    width: 100%;
+    background-color: #354052;
+}
