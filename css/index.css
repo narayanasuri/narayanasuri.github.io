@@ -1,139 +1,378 @@
-body, h1, h2 {
-    font-family: Helvetica;
+/* ----- Fonts ----- */
+body, p {
+    -webkit-font-smoothing: antialiased;
+    font-family: sans-serif !important;
 }
 
-header-div {
-    width: 100%;
-    background-color: #354052;
+/* ----- Animation ----- */
+.animate {
+	-webkit-animation:animate .6s cubic-bezier(0.2, 0.6, 0.2, 1);
+	-moz-animation:animate .6s cubic-bezier(0.2, 0.6, 0.2, 1);
+	animation:animate .6s cubic-bezier(0.2, 0.6, 0.2, 1);
+	-webkit-animation-fill-mode:backwards;
+	-moz-animation-fill-mode:backwards;
+	animation-fill-mode:backwards;
+}
+@-webkit-keyframes animate {
+	0% {opacity: 0;-webkit-transform: translateY(80px);}
+	100% {opacity: 1;-webkit-transform: translateY(0%);}	
 }
 
-#propic {
-    object-fit: cover;
-    width: 80%;
+@keyframes animate {
+	0% {opacity: 0;transform: translateY(80px);}
+	100% {opacity: 1;transform: translateY(0%);}	
 }
 
-.header-element {
-    padding: 2em;
+.delaytitle { -webkit-animation-delay: .4s; animation-delay: .4s;}
+.delaycontent { -webkit-animation-delay: .8s; animation-delay: .8s;}
+
+a:hover {
+    text-decoration: none;
+    color: black;
 }
 
-.header-p {
-    font-size: 16px;
-    color: #E8E8EB;
-}
-
-.experience-div {
-    padding: 2em;
-    background-color: #F5F9FC;
-}
-
-.custom-grid-container {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-}
-
-#propicdiv {
-    grid-column: span 4;
-}
-
-#prodescdiv {
-    grid-column: span 8;
-    color: white;
-}
-
-.exp-card {
-    padding: 10px;
-    grid-column: span 3;
-}
-
-.skills-div {
-    padding: 2em;
-    background-color: #F5F9FC;
-}
-
-.chip {
-    display: inline-block;
-    padding: 0 25px;
-    height: 40px;
-    font-size: 13px;
-    border-radius: 25px;
-    line-height: 40px;
-    background-color: #f1f1f1;
-}
-  
-.chip img {
-    float: left;
-    margin: 0 10px 0 -25px;
-    height: 40px;
-    width: 40px;
-    border-radius: 50%;
-}
-
-@media screen and (max-width: 768px) {
-    #propicdiv {
-        grid-column: span 6;
+/* Custom, iPhone Retina */ 
+@media only screen and (min-width : 320px) and (max-width: 479px) {
+    .profile-container {
+        margin: 0rem;
     }
-    #prodescdiv {
-        grid-column: span 6;
-        color: white;
-        text-align: center;
+    
+    .content-container {
+        margin: 3rem;
     }
-    .exp-card {
-        padding: 10px;
-        grid-column: span 6;
-        margin-left: 20px;
+    
+    #profile-name {
+        font-weight: 800;
+        font-size: 1.5rem;
+        margin-bottom: 8rem;
     }
-    .exp-card-list {
-        text-align: center;
+    
+    #profile-title {
+        font-weight: bold;
+        font-size: 3rem;
+        padding: 0 0;
     }
-}
 
-@media screen and (max-width: 480px) {
-    #propicdiv {
-        grid-column: span 12;
+    #profile-picture {
+        max-width: 80%;
     }
-    #prodescdiv {
-        grid-column: span 12;
-        color: white;
-        text-align: center;
+    
+    .intro {
+        font-weight: 300;
+        line-height: 3.2rem;
     }
-    .exp-card {
-        padding: 10px;
-        margin-left: 20px;
-        grid-column: span 12;
+
+    #intro-title {
+        font-weight: bold;
+        font-size: 2.3rem;
+        padding: 2rem 0;
     }
-    .exp-card-list {
-        text-align: center;
+
+    .intro-content {
+        font-size: 2rem;
+        line-height: 3rem;
+    }
+
+    .resume-link {
+        color: black;
+        text-decoration: underline;
+        font-size: 1.3rem;
+    }
+        
+    .contact-link {
+        color: black;
+        font-size: 1.3rem;
+        display: block;
+    }
+
+    .skill-item {
+        display: flex;
+    }
+
+    .skill-icon {
+        font-size: 3rem;
+    }
+
+    .skill-title {
+        padding: 0 1rem;
+        font-weight: 600;
+        font-size: 1.8rem;
     }
 }
 
-.social-networks a {
-    color: #E8E8EB;
-    font-size: 30px;
-    margin: 10px;
+/* Extra Small Devices, Phones */ 
+@media only screen and (min-width : 480px) and (max-width: 767px) {
+    .profile-container {
+        margin: 0rem;
+    }
+
+    .content-container {
+        margin: 4rem;
+    }
+    
+    #profile-name {
+        font-weight: 800;
+        font-size: 1.5rem;
+        margin-bottom: 8rem;
+    }
+    
+    #profile-title {
+        font-weight: bold;
+        font-size: 3rem;
+        padding: 0 0;
+    }
+
+    #profile-picture {
+        max-width: 80%;
+    }
+
+    .intro {
+        font-weight: 300;
+        line-height: 3.2rem;
+    }
+
+    #intro-title {
+        font-weight: bold;
+        font-size: 2.3rem;
+        padding: 2rem 0;
+    }
+
+    .intro-content {
+        font-size: 2rem;
+        line-height: 3rem;
+    }
+
+    .resume-link {
+        color: black;
+        text-decoration: underline;
+        font-size: 1.3rem;
+    }
+        
+    .contact-link {
+        color: black;
+        font-size: 1.3rem;
+        display: block;
+    }
+
+    .skill-item {
+        display: flex;
+    }
+
+    .skill-icon {
+        font-size: 3rem;
+    }
+
+    .skill-title {
+        padding: 0 1rem;
+        font-weight: 600;
+        font-size: 1.8rem;
+    }
 }
 
-#facebook-icon:hover{
-	color:#3b5998;
-}
-#googleplus-icon:hover{
-	color:#ef1a1a;
-}
-#twitter-icon:hover{
-	color: #00aced;
-}
-#github-icon:hover{
-	color: #3F4448;
-}
-#linkedin-icon:hover{
-	color: #0077B5;
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) and (max-width: 991px) {
+    .profile-container {
+        margin: 0rem;
+    }
+
+    .content-container {
+        margin: 5rem 8rem;
+    }
+    
+    #profile-name {
+        font-weight: 800;
+        font-size: 2rem;
+        padding-top: 3rem;
+        margin-bottom: 8rem;
+    }
+    
+    #profile-title {
+        font-weight: bold;
+        font-size: 3rem;
+        padding: 0 0;
+    }
+
+    #profile-picture {
+        max-width: 80%;
+    }
+
+    .intro {
+        font-weight: 300;
+        line-height: 3.2rem;
+    }
+
+    #intro-title {
+        font-weight: bold;
+        font-size: 2.3rem;
+        padding: 2rem 0;
+    }
+
+    .intro-content {
+        font-size: 2rem;
+        line-height: 3rem;
+    }
+
+    .resume-link {
+        color: black;
+        text-decoration: underline;
+        font-size: 1.3rem;
+    }
+        
+    .contact-link {
+        color: black;
+        font-size: 1.3rem;
+        display: block;
+    }
+
+    .skill-item {
+        display: flex;
+    }
+
+    .skill-icon {
+        font-size: 3rem;
+    }
+
+    .skill-title {
+        padding: 0 1rem;
+        font-weight: 600;
+        font-size: 1.8rem;
+    }
 }
 
-.skillicon {
-    font-size: 72px;
-    color: #5F6368;
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) and (max-width: 1199px) {
+    .profile-container {
+        margin: 3rem;
+    }
+
+    .content-container {
+        margin: 5rem 8rem;
+    }
+    
+    #profile-name {
+        font-weight: 800;
+        font-size: 1.5rem;
+        margin-bottom: 8rem;
+    }
+    
+    #profile-title {
+        font-weight: bold;
+        font-size: 3.8rem;
+        padding: 0;
+    }
+
+    #profile-picture {
+        max-width: 60%;
+    }
+
+    .intro {
+        font-weight: 300;
+        line-height: 3.2rem;
+    }
+
+    #intro-title {
+        font-weight: bold;
+        font-size: 2.3rem;
+        padding: 2rem 0;
+    }
+
+    .intro-content {
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
+
+    .resume-link {
+        color: black;
+        text-decoration: underline;
+        font-size: 1.3rem;
+    }
+    
+    .contact-link {
+        color: black;
+        font-size: 1.3rem;
+        display: block;
+    }
+
+    .skill-item {
+        display: flex;
+    }
+
+    .skill-icon {
+        font-size: 3rem;
+    }
+
+    .skill-title {
+        padding: 0 1rem;
+        font-weight: 600;
+        font-size: 1rem;
+    }
 }
 
-.footer-div {
-    width: 100%;
-    background-color: #373D48;
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+    .profile-container {
+        margin: 3rem;
+    }
+    
+    .content-container {
+        margin: 5rem 8rem;
+    }
+    
+    #profile-name {
+        font-weight: 800;
+        font-size: 1.5rem;
+        margin-bottom: 8rem;
+    }
+    
+    #profile-title {
+        font-weight: bold;
+        font-size: 3.8rem;
+        padding: 0;
+    }
+
+    #profile-picture {
+        max-width: 60%;
+    }
+
+    .intro {
+        font-weight: 300;
+        line-height: 3.2rem;
+    }
+
+    #intro-title {
+        font-weight: bold;
+        font-size: 2.3rem;
+        padding: 2rem 0;
+    }
+
+    .intro-content {
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
+
+    .resume-link {
+        color: black;
+        text-decoration: underline;
+        font-size: 1.3rem;
+    }
+    
+    .contact-link {
+        color: black;
+        font-size: 1.3rem;
+        display: block;
+    }
+
+    .skill-item {
+        display: flex;
+    }
+
+    .skill-icon {
+        font-size: 3rem;
+    }
+
+    .skill-title {
+        padding: 0 1rem;
+        font-weight: 600;
+        font-size: 1rem;
+    }
 }
