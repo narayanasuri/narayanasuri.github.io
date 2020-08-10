@@ -1,4 +1,10 @@
 /* ----- Fonts ----- */
+
+body {
+    background-color: #222222;
+    color: white;
+}
+
 body, p {
     -webkit-font-smoothing: antialiased;
     font-family: sans-serif !important;
@@ -26,164 +32,44 @@ body, p {
 .delaytitle { -webkit-animation-delay: .4s; animation-delay: .4s;}
 .delaycontent { -webkit-animation-delay: .8s; animation-delay: .8s;}
 
+.color-grey {
+    color: #D5D5D5;
+}
+
+.social-media-links {
+    padding: 1rem 0rem 1rem 1rem;
+}
+
+.social-media-links > a {
+    padding: 0 1rem 0 0.5rem;
+    font-size: 1.3rem;
+    /* color: #2B7CED; */
+    color: #6C6C6C;
+}
+
 a:hover {
     text-decoration: none;
-    color: black;
-}
-
-/* Custom, iPhone Retina */ 
-@media only screen and (min-width : 320px) and (max-width: 479px) {
-    .profile-container {
-        margin: 0rem;
-    }
-    
-    .content-container {
-        margin: 3rem;
-    }
-    
-    #profile-name {
-        font-weight: 800;
-        font-size: 1.5rem;
-        margin-bottom: 8rem;
-    }
-    
-    #profile-title {
-        font-weight: bold;
-        font-size: 3rem;
-        padding: 0 0;
-    }
-
-    #profile-picture {
-        max-width: 80%;
-    }
-    
-    .intro {
-        font-weight: 300;
-        line-height: 3.2rem;
-    }
-
-    #intro-title {
-        font-weight: bold;
-        font-size: 2.3rem;
-        padding: 2rem 0;
-    }
-
-    .intro-content {
-        font-size: 2rem;
-        line-height: 3rem;
-    }
-
-    .resume-link {
-        color: black;
-        text-decoration: underline;
-        font-size: 1.3rem;
-    }
-        
-    .contact-link {
-        color: black;
-        font-size: 1.3rem;
-        display: block;
-    }
-
-    .skill-item {
-        display: flex;
-    }
-
-    .skill-icon {
-        font-size: 3rem;
-    }
-
-    .skill-title {
-        padding: 0 1rem;
-        font-weight: 600;
-        font-size: 1.8rem;
-    }
-}
-
-/* Extra Small Devices, Phones */ 
-@media only screen and (min-width : 480px) and (max-width: 767px) {
-    .profile-container {
-        margin: 0rem;
-    }
-
-    .content-container {
-        margin: 4rem;
-    }
-    
-    #profile-name {
-        font-weight: 800;
-        font-size: 1.5rem;
-        margin-bottom: 8rem;
-    }
-    
-    #profile-title {
-        font-weight: bold;
-        font-size: 3rem;
-        padding: 0 0;
-    }
-
-    #profile-picture {
-        max-width: 80%;
-    }
-
-    .intro {
-        font-weight: 300;
-        line-height: 3.2rem;
-    }
-
-    #intro-title {
-        font-weight: bold;
-        font-size: 2.3rem;
-        padding: 2rem 0;
-    }
-
-    .intro-content {
-        font-size: 2rem;
-        line-height: 3rem;
-    }
-
-    .resume-link {
-        color: black;
-        text-decoration: underline;
-        font-size: 1.3rem;
-    }
-        
-    .contact-link {
-        color: black;
-        font-size: 1.3rem;
-        display: block;
-    }
-
-    .skill-item {
-        display: flex;
-    }
-
-    .skill-icon {
-        font-size: 3rem;
-    }
-
-    .skill-title {
-        padding: 0 1rem;
-        font-weight: 600;
-        font-size: 1.8rem;
-    }
+    color: #2B7CED;
 }
 
 /* Small Devices, Tablets */
-@media only screen and (min-width : 768px) and (max-width: 991px) {
-    .profile-container {
-        margin: 0rem;
+@media only screen and (min-width : 320px) and (max-width: 991px) {
+    body {
+        font-size: 2.5rem;
+    }
+
+    #main-container {
+        height: 100%;
     }
 
     .content-container {
-        margin: 5rem 8rem;
+        padding: 3rem 8rem;
     }
     
     #profile-name {
         font-weight: 800;
-        font-size: 2rem;
-        padding-top: 3rem;
-        margin-bottom: 8rem;
+        font-size: 2.5rem;
+        padding: 1rem 0;
     }
     
     #profile-title {
@@ -229,40 +115,150 @@ a:hover {
     }
 
     .skill-icon {
-        font-size: 3rem;
+        font-size: 5rem;
+    }
+
+    .skill-icon + p {
+        font-size: 1.8rem;
     }
 
     .skill-title {
         padding: 0 1rem;
         font-weight: 600;
         font-size: 1.8rem;
+    }
+
+    /* New */
+
+    #profile-header {
+        height: auto;
+    }
+
+    .content-title {
+        font-weight: 800;
+        font-size: 2.5rem;
+        padding: 0 0 2rem 0;
+    }
+
+    .footer-contact-link {
+        color: white;
+        font-size: 2.3rem;
+        display: block;
+        line-height: 2;
+    }
+
+    #header-container {
+        flex-direction: column !important;
+        width: 100%;
+        padding: 4rem 0;
+    }
+
+    .heading {
+        font-weight: 800;
+        font-size: 1.5rem;
+        padding: 0 3rem;
+    }
+
+    #profile-description {
+        margin-left: 0;
+        margin-right: 0;
+        padding: 3rem 8rem;
+        text-align: center;
+    }
+
+    #profile-picture {
+        width: 30rem;
+        height: 30rem;
+        border-radius: 50%;
+        margin: 4rem auto;
+    }
+
+    .skill-list {
+        padding-top: 3rem;
+    }
+
+    .skill-list > div {
+        background-color: #222222 !important;
+        color: #6C6C6C !important;
+        text-align: center;
+    }
+
+    #occupation {
+        margin: 0;
+        margin-bottom: 1rem;
+        font-size: 2.5rem;
+        padding: 0.5rem 0;
+    }
+
+    #username {
+        margin: 0;
+        margin-bottom: 1rem;
+        font-size: 4rem;
+        font-weight: 900;
+        padding: 0.5rem 0;
+    }
+
+    #summary {
+        margin: 0;
+        margin-bottom: 1rem;
+        font-size: 2.5rem;
+        padding: 0.5rem 0;
+    }
+
+    .profile-card {
+        text-align: center;
+        text-align: -webkit-center;
+        border-color: #485056 !important;
+        background-color: #222222 !important;
+    }
+
+    .profile-card > img {
+        width: 50%;
+        height: auto;
+        padding-top: 1rem;
+        margin: auto;
+    }
+
+    .social-media-links {
+        padding: 1rem 0rem 1rem 1rem;
+        margin: auto;
+    }
+    
+    .social-media-links > a {
+        padding: 0 1rem 0 0.5rem;
+        font-size: 3rem;
+        /* color: #2B7CED; */
+        color: #6C6C6C;
+    }
+
+    #header-section {
+        margin-top: 4rem;
+    }
+
+    #footer-section {
+        margin-bottom: 4rem;
     }
 }
 
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px) and (max-width: 1199px) {
-    .profile-container {
-        margin: 3rem;
+    #main-container {
+        height: auto;
     }
 
     .content-container {
-        margin: 5rem 8rem;
+        padding: 3rem 5rem;
     }
     
     #profile-name {
         font-weight: 800;
         font-size: 1.5rem;
-        margin-bottom: 8rem;
     }
     
     #profile-title {
         font-weight: bold;
         font-size: 3.8rem;
         padding: 0;
-    }
-
-    #profile-picture {
-        max-width: 60%;
     }
 
     .intro {
@@ -305,23 +301,98 @@ a:hover {
         padding: 0 1rem;
         font-weight: 600;
         font-size: 1rem;
+    }
+
+    /* New */
+
+    #profile-header {
+        height: auto;
+    }
+
+    .content-title {
+        font-weight: 800;
+        font-size: 1.5rem;
+    }
+
+    .footer-contact-link {
+        color: white;
+        font-size: 1.3rem;
+        display: block;
+    }
+
+    #header-container {
+        flex-direction: row !important;
+        width: 65%;
+        padding: 4rem 0;
+    }
+
+    .heading {
+        font-weight: 800;
+        font-size: 1.5rem;
+        padding: 0 3rem;
+    }
+
+    #profile-description {
+        margin-left: 0;
+        margin-right: 0;
+        padding: 3rem 0 3rem 3.5rem;
+    }
+
+    #profile-picture {
+        width: 15rem;
+        height: 15rem;
+        border-radius: 50%;
+        margin: auto;
+    }
+
+    .skill-list {
+        padding-top: 3rem;
+    }
+
+    .skill-list > div {
+        background-color: #222222 !important;
+        color: #6C6C6C !important;
+        text-align: center;
+    }
+
+    #occupation, #username {
+        margin: 0;
+        margin-bottom: 1rem;
+    }
+
+    #summary {
+        margin: 0;
+        margin-bottom: 1.5rem;
+    }
+
+    .profile-card {
+        text-align: center;
+        text-align: -webkit-center;
+        border-color: #485056 !important;
+        background-color: #222222 !important;
+    }
+
+    .profile-card > img {
+        width: 50%;
+        height: auto;
+        padding-top: 1rem;
+        margin: auto;
     }
 }
 
 /* Large Devices, Wide Screens */
 @media only screen and (min-width : 1200px) {
-    .profile-container {
-        margin: 3rem;
+    #main-container {
+        height: auto;
     }
     
     .content-container {
-        margin: 5rem 8rem;
+        padding: 3rem 8rem;
     }
     
     #profile-name {
         font-weight: 800;
         font-size: 1.5rem;
-        margin-bottom: 8rem;
     }
     
     #profile-title {
@@ -330,19 +401,9 @@ a:hover {
         padding: 0;
     }
 
-    #profile-picture {
-        max-width: 60%;
-    }
-
     .intro {
         font-weight: 300;
         line-height: 3.2rem;
-    }
-
-    #intro-title {
-        font-weight: bold;
-        font-size: 2.3rem;
-        padding: 2rem 0;
     }
 
     .intro-content {
@@ -374,5 +435,81 @@ a:hover {
         padding: 0 1rem;
         font-weight: 600;
         font-size: 1rem;
+    }
+
+    /* New */
+
+    #profile-header {
+        height: auto;
+    }
+
+    .content-title {
+        font-weight: 800;
+        font-size: 1.5rem;
+    }
+
+    .footer-contact-link {
+        color: white;
+        font-size: 1.3rem;
+        display: block;
+    }
+
+    #header-container {
+        flex-direction: row !important;
+        width: 65%;
+        padding: 4rem 0;
+    }
+
+    .heading {
+        font-weight: 800;
+        font-size: 1.5rem;
+        padding: 0 3rem;
+    }
+
+    #profile-description {
+        margin-left: 0;
+        margin-right: 0;
+        padding: 3rem 0 3rem 3.5rem;
+    }
+
+    #profile-picture {
+        width: 20rem;
+        height: 20rem;
+        border-radius: 50%;
+        margin: auto;
+    }
+
+    .skill-list {
+        padding-top: 3rem;
+    }
+
+    .skill-list > div {
+        background-color: #222222 !important;
+        color: #6C6C6C !important;
+        text-align: center;
+    }
+
+    #occupation, #username {
+        margin: 0;
+        margin-bottom: 1rem;
+    }
+
+    #summary {
+        margin: 0;
+        margin-bottom: 1.5rem;
+    }
+
+    .profile-card {
+        text-align: center;
+        text-align: -webkit-center;
+        border-color: #485056 !important;
+        background-color: #222222 !important;
+    }
+
+    .profile-card > img {
+        width: 50%;
+        height: auto;
+        padding-top: 1rem;
+        margin: auto;
     }
 }
