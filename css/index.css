@@ -1,7 +1,7 @@
 /* ----- Fonts ----- */
 
 body {
-    background-color: #222222;
+    background-color: #0A0908;
     color: white;
 }
 
@@ -37,7 +37,7 @@ body, p {
 }
 
 .social-media-links {
-    padding: 1rem 0rem 1rem 1rem;
+    padding: 1rem 0rem 1rem 0;
 }
 
 .social-media-links > a {
@@ -178,7 +178,7 @@ a:hover {
     }
 
     .skill-list > div {
-        background-color: #222222 !important;
+        background-color: #0A0908 !important;
         color: #6C6C6C !important;
         text-align: center;
     }
@@ -194,8 +194,9 @@ a:hover {
         margin: 0;
         margin-bottom: 1rem;
         font-size: 4rem;
-        font-weight: 900;
+        font-weight: 800;
         padding: 0.5rem 0;
+        color: #3777FF;
     }
 
     #summary {
@@ -208,8 +209,8 @@ a:hover {
     .profile-card {
         text-align: center;
         text-align: -webkit-center;
-        border-color: #485056 !important;
-        background-color: #222222 !important;
+        border-color: #22333B !important;
+        background-color: #0A0908 !important;
     }
 
     .profile-card > img {
@@ -220,7 +221,7 @@ a:hover {
     }
 
     .social-media-links {
-        padding: 1rem 0rem 1rem 1rem;
+        padding: 1rem 0rem 1rem 0;
         margin: auto;
     }
     
@@ -350,14 +351,21 @@ a:hover {
     }
 
     .skill-list > div {
-        background-color: #222222 !important;
+        background-color: #0A0908 !important;
         color: #6C6C6C !important;
         text-align: center;
     }
 
-    #occupation, #username {
+    #occupation {
         margin: 0;
         margin-bottom: 1rem;
+    }
+
+    #username {
+        margin: 0;
+        margin-bottom: 1rem;
+        font-weight: 800;
+        color: #3777FF;
     }
 
     #summary {
@@ -368,8 +376,8 @@ a:hover {
     .profile-card {
         text-align: center;
         text-align: -webkit-center;
-        border-color: #485056 !important;
-        background-color: #222222 !important;
+        border-color: #22333B !important;
+        background-color: #0A0908 !important;
     }
 
     .profile-card > img {
@@ -484,14 +492,21 @@ a:hover {
     }
 
     .skill-list > div {
-        background-color: #222222 !important;
+        background-color: #0A0908 !important;
         color: #6C6C6C !important;
         text-align: center;
     }
 
-    #occupation, #username {
+    #occupation {
         margin: 0;
         margin-bottom: 1rem;
+    }
+    
+    #username {
+        margin: 0;
+        margin-bottom: 1rem;
+        font-weight: 800;
+        color: #3777FF;
     }
 
     #summary {
@@ -502,8 +517,8 @@ a:hover {
     .profile-card {
         text-align: center;
         text-align: -webkit-center;
-        border-color: #485056 !important;
-        background-color: #222222 !important;
+        border-color: #22333B !important;
+        background-color: #0A0908 !important;
     }
 
     .profile-card > img {
